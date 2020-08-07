@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/FinalProject.iml" filepath="$PROJECT_DIR$/FinalProject.iml" group="FinalProject" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="FinalProject/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend/backend.iml" filepath="$PROJECT_DIR$/.idea/modules/backend/backend.iml" group="FinalProject/backend" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/javaJoker/javaJoker.iml" filepath="$PROJECT_DIR$/.idea/modules/javaJoker/javaJoker.iml" group="FinalProject/javaJoker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/jokelibrary/jokelibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/app/jokelibrary/jokelibrary.iml" group="FinalProject/app/jokelibrary" />
     </modules>
   </component>
 </project>

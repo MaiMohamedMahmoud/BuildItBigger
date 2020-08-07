@@ -1,10 +1,14 @@
 package com.udacity.gradle.builditbigger;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import com.marscode.pwn.javajoker.Joker;
+import com.marscode.pwn.jokelibrary.ShowJoke;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -41,7 +45,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-        Toast.makeText(this, "derp", Toast.LENGTH_SHORT).show();
+
+        Joker joker = new Joker();
+
+        /**
+         * this Toast for the first step
+         * Toast.makeText(this, joker.tellJoke(), Toast.LENGTH_SHORT).show();
+         */
+
+
+        //this is the second step
+        // Create Intent to launch JokeFactory Activity
+        Intent intent = new Intent(this, ShowJoke.class);
+        // Save the string
+        intent.putExtra(getString(R.string.joke), joker.tellJoke());
+        startActivity(intent);
+
     }
 
 
