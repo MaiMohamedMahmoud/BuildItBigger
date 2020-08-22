@@ -3,7 +3,7 @@
     package="com.marscode.pwn.jokelibrary">
 
     <application>
-        <activity android:name=".ShowJoke"></activity>
+        <activity android:name=".DisplayJoke"></activity>
     </application>
 
 </manifest>

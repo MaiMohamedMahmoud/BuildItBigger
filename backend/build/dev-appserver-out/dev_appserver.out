@@ -1,23 +1,21 @@
-Aug 07, 2020 11:17:23 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+Aug 22, 2020 11:14:01 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
 INFO: Overwriting system property key 'java.util.logging.config.file', value '/Users/mac-os/Desktop/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/config/sdk/logging.properties' with value 'WEB-INF/logging.properties' from '/Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend/WEB-INF/appengine-web.xml'
-2020-08-07 23:17:23.726:INFO::main: Logging initialized @2770ms to org.eclipse.jetty.util.log.StdErrLog
-2020-08-07 23:17:24.009:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
-Aug 07, 2020 9:17:24 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+2020-08-22 23:14:01.689:INFO::main: Logging initialized @3534ms to org.eclipse.jetty.util.log.StdErrLog
+2020-08-22 23:14:01.929:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
+Aug 22, 2020 9:14:02 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
 WARNING: Your working directory, (/Users/mac-os/Desktop/FinalProject) is not equal to your 
 web application root (/Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend)
 You will not be able to access files from your working directory on the production server.
 
-2020-08-07 23:17:25.149:INFO:oejs.Server:main: jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 1.8.0_242-release-1644-b3-6222593
-2020-08-07 23:17:26.304:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@4d15107f{/,file:///Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend/,AVAILABLE}{/Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend}
-2020-08-07 23:17:26.309:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
-2020-08-07 23:17:26.309:INFO:oejs.session:main: node0 Scavenging disabled
-2020-08-07 23:17:26.337:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@eec5a4a{HTTP/1.1, (http/1.1)}{localhost:8080}
-2020-08-07 23:17:26.343:INFO:oejs.Server:main: Started @5388ms
-Aug 07, 2020 9:17:26 PM com.google.appengine.tools.development.AbstractModule startup
+2020-08-22 23:14:03.006:INFO:oejs.Server:main: jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 1.8.0_242-release-1644-b3-6222593
+2020-08-22 23:14:04.200:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@50378a4{/,file:///Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend/,AVAILABLE}{/Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend}
+2020-08-22 23:14:04.207:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-08-22 23:14:04.209:INFO:oejs.session:main: node0 Scavenging disabled
+2020-08-22 23:14:04.243:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@eec5a4a{HTTP/1.1, (http/1.1)}{localhost:8080}
+2020-08-22 23:14:04.257:INFO:oejs.Server:main: Started @6102ms
+Aug 22, 2020 9:14:04 PM com.google.appengine.tools.development.AbstractModule startup
 INFO: Module instance default is running at http://localhost:8080/
-Aug 07, 2020 9:17:26 PM com.google.appengine.tools.development.AbstractModule startup
+Aug 22, 2020 9:14:04 PM com.google.appengine.tools.development.AbstractModule startup
 INFO: The admin console is running at http://localhost:8080/_ah/admin
-Aug 07, 2020 11:17:26 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+Aug 22, 2020 11:14:04 PM com.google.appengine.tools.development.DevAppServerImpl doStart
 INFO: Dev App Server is now running
-Aug 07, 2020 11:18:04 PM com.google.appengine.tools.development.jetty9.LocalResourceFileServlet doGet
-WARNING: No file found for: /favicon.ico

@@ -7,7 +7,6 @@ buildscript {
     }
     dependencies {
         classpath 'com.google.cloud.tools:endpoints-framework-gradle-plugin:1.0.3'
-
     }
 }
 
@@ -33,6 +32,22 @@ android {
         }
     }
 
+
+    flavorDimensions "version"
+    productFlavors {
+        free {
+            dimension "version"
+            applicationId "com.udacity.gradle.builditbigger.free"
+            versionNameSuffix "-free"
+        }
+
+        paid {
+            dimension "version"
+            applicationId "com.udacity.gradle.builditbigger.paid"
+            versionNameSuffix "-paid"
+        }
+    }
+
     dexOptions {
         javaMaxHeapSize "4g"
     }
@@ -42,6 +57,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(path: ':javaJoker')
     implementation project(path: ':app:jokelibrary')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     endpointsServer project(path: ':backend', configuration: 'endpoints')
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.gms:play-services-ads:19.1.0'
@@ -55,9 +72,10 @@ dependencies {
     })
 
     testImplementation 'junit:junit:4.12'
-    testImplementation 'junit:junit:4.12'
     testImplementation 'androidx.test:runner:1.2.0'
     testImplementation 'androidx.test:rules:1.2.0'
-    testImplementation 'androidx.annotation:annotation:1.1.0'
-    implementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test:rules:1.1.0'
+
+
 }

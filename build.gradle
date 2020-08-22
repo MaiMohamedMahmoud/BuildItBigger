@@ -22,3 +22,34 @@ allprojects {
         }
     }
 }
+
+
+task launchGCELocalServer{
+    dependsOn ':backend:appengineStart'
+    doLast{
+        println'local server running'
+    }
+}
+
+task runTestAll {
+    dependsOn ':app:connectedAndroidTest'
+    doLast {
+        println "Run all tests"
+    }
+}
+
+task stopGCELocalServer{
+    dependsOn ':backend:appengineStop'
+    doLast{
+        println'local server stop'
+    }
+}
+
+
+task configrationTask {
+    dependsOn 'launchGCELocalServer'
+    dependsOn 'runTestAll'
+    dependsOn 'stopGCELocalServer'
+    launchGCELocalServer.finalizedBy runTestAll
+    runTestAll.finalizedBy stopGCELocalServer
+}
