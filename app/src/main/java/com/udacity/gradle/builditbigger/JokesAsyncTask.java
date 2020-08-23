@@ -28,6 +28,7 @@ class JokesAsyncTask extends AsyncTask<Void, Void, String> {
         super.onPreExecute();
     }
 
+
     @Override
     protected String doInBackground(Void... voids) {
         if (myApiService == null) {
@@ -35,6 +36,7 @@ class JokesAsyncTask extends AsyncTask<Void, Void, String> {
              *  To run the App on Android Emulator
              *  just user builderEmulator instead of builder
              */
+
 
             MyApi.Builder builderEmulator = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
