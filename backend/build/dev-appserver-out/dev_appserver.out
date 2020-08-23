@@ -1,21 +1,33 @@
-Aug 22, 2020 11:14:01 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+Aug 23, 2020 1:59:04 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
 INFO: Overwriting system property key 'java.util.logging.config.file', value '/Users/mac-os/Desktop/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/config/sdk/logging.properties' with value 'WEB-INF/logging.properties' from '/Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend/WEB-INF/appengine-web.xml'
-2020-08-22 23:14:01.689:INFO::main: Logging initialized @3534ms to org.eclipse.jetty.util.log.StdErrLog
-2020-08-22 23:14:01.929:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
-Aug 22, 2020 9:14:02 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+2020-08-23 01:59:05.885:INFO::main: Logging initialized @4801ms to org.eclipse.jetty.util.log.StdErrLog
+2020-08-23 01:59:06.123:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
+Aug 22, 2020 11:59:06 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
 WARNING: Your working directory, (/Users/mac-os/Desktop/FinalProject) is not equal to your 
 web application root (/Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend)
 You will not be able to access files from your working directory on the production server.
 
-2020-08-22 23:14:03.006:INFO:oejs.Server:main: jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 1.8.0_242-release-1644-b3-6222593
-2020-08-22 23:14:04.200:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@50378a4{/,file:///Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend/,AVAILABLE}{/Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend}
-2020-08-22 23:14:04.207:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
-2020-08-22 23:14:04.209:INFO:oejs.session:main: node0 Scavenging disabled
-2020-08-22 23:14:04.243:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@eec5a4a{HTTP/1.1, (http/1.1)}{localhost:8080}
-2020-08-22 23:14:04.257:INFO:oejs.Server:main: Started @6102ms
-Aug 22, 2020 9:14:04 PM com.google.appengine.tools.development.AbstractModule startup
-INFO: Module instance default is running at http://localhost:8080/
-Aug 22, 2020 9:14:04 PM com.google.appengine.tools.development.AbstractModule startup
-INFO: The admin console is running at http://localhost:8080/_ah/admin
-Aug 22, 2020 11:14:04 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+2020-08-23 01:59:07.123:INFO:oejs.Server:main: jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 1.8.0_242-release-1644-b3-6222593
+2020-08-23 01:59:08.503:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@aba625{/,file:///Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend/,AVAILABLE}{/Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend}
+2020-08-23 01:59:08.504:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-08-23 01:59:08.504:INFO:oejs.session:main: node0 Scavenging disabled
+2020-08-23 01:59:08.533:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@4b4523f8{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2020-08-23 01:59:08.547:INFO:oejs.Server:main: Started @7462ms
+Aug 22, 2020 11:59:08 PM com.google.appengine.tools.development.AbstractModule startup
+INFO: Module instance default is running at http://localhost:8081/
+Aug 22, 2020 11:59:08 PM com.google.appengine.tools.development.AbstractModule startup
+INFO: The admin console is running at http://localhost:8081/_ah/admin
+Aug 23, 2020 1:59:08 AM com.google.appengine.tools.development.DevAppServerImpl doStart
 INFO: Dev App Server is now running
+Aug 23, 2020 1:59:14 AM com.google.appengine.api.datastore.dev.LocalDatastoreService init
+INFO: Local Datastore initialized: 
+	Type: High Replication
+	Storage: /Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend/WEB-INF/appengine-generated/local_db.bin
+Aug 23, 2020 1:59:14 AM com.google.appengine.api.datastore.dev.LocalDatastoreService load
+INFO: The backing store, /Users/mac-os/Desktop/FinalProject/backend/build/exploded-backend/WEB-INF/appengine-generated/local_db.bin, does not exist. It will be created.
+Aug 23, 2020 1:59:16 AM com.google.appengine.tools.development.jetty9.LocalResourceFileServlet doGet
+WARNING: No file found for: /favicon.ico
+Aug 23, 2020 1:59:37 AM com.google.appengine.tools.development.jetty9.LocalResourceFileServlet doGet
+WARNING: No file found for: /favicon.ico
+Aug 23, 2020 2:02:14 AM com.google.appengine.tools.development.jetty9.LocalResourceFileServlet doGet
+WARNING: No file found for: /favicon.ico

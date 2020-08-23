@@ -37,3 +37,9 @@ dependencies {
     implementation project(path: ':javaJoker')
     implementation project(path: ':javaJoker')
 }
+appengine {
+    run {
+        host = "0.0.0.0"
+        port = 8081
+    }
+}
