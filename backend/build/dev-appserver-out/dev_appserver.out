@@ -31,3 +31,5 @@ Aug 23, 2020 1:59:37 AM com.google.appengine.tools.development.jetty9.LocalResou
 WARNING: No file found for: /favicon.ico
 Aug 23, 2020 2:02:14 AM com.google.appengine.tools.development.jetty9.LocalResourceFileServlet doGet
 WARNING: No file found for: /favicon.ico
+Aug 23, 2020 2:08:18 AM com.google.appengine.tools.development.jetty9.LocalResourceFileServlet doGet
+WARNING: No file found for: /favicon.ico

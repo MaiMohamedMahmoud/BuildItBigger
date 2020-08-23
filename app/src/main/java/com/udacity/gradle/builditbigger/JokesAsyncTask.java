@@ -31,30 +31,34 @@ class JokesAsyncTask extends AsyncTask<Void, Void, String> {
     @Override
     protected String doInBackground(Void... voids) {
         if (myApiService == null) {
-//            // Only do this once
-//            MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
-//                    new AndroidJsonFactory(), null)
-//                    // options for running against local devappserver
-//                    // - 10.0.2.2 is localhost's IP address in Android emulator
-//                    // - turn off compression when running against local devappserver
-//                    .setRootUrl("http://10.0.2.2:8080/_ah/api/")
-//                    .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
-//                        @Override
-//                        public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
-//                            abstractGoogleClientRequest.setDisableGZipContent(true);
-//                        }
-//                    });
-//            // end options for devappserver
+            /**
+             *  To run the App on Android Emulator
+             *  just user builderEmulator instead of builder
+             */
+
+            MyApi.Builder builderEmulator = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
+                    new AndroidJsonFactory(), null)
+                    // options for running against local devappserver
+                    // - 10.0.2.2 is localhost's IP address in Android emulator
+                    // - turn off compression when running against local devappserver
+                    .setRootUrl("http://10.0.2.2:8080/_ah/api/")
+                    .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
+                        @Override
+                        public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
+                            abstractGoogleClientRequest.setDisableGZipContent(true);
+                        }
+                    });
+            // end options for devappserver
 
             /**
-             * just change the rootUrl with your IpAddress to run the App on Physical Device
+             * To run the App on Physical Device
+             * just change the rootUrl with your IpAddress
              * to get your ipAddress
              * for Windows:
              * ipconfig
              * for Mac/Linux:
              * ifconfig
              */
-
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
                     .setRootUrl("http://192.168.1.7:8081/_ah/api/")
